@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ログイン画面</title>
+</head>
+<body>
+    <h1>チャットアプリへようこそ！</h1>
+    <h2>ログインはこちらから</h2>
+    <h3>e-mailアドレスとパスワードを入力してください</h3>
+    <!--action属性には送信先を入力-->
+    <form method="post" action="">
+        <dl>
+            <dt>e-mail:</dt>
+                <dd><input typt=text name=user></dd>
+            <dt>パスワード:</dt>
+                <dd><input type=text name=password></dd>
+        </dl>
+        <p><input type="button" onclick="location.href='channel.html'" value=ログイン></p>
+        <p><input type="button" onclick="location.href='memberadd.html'" value=新規登録はこちら></p>
+    </form>
+</body>
+</html>

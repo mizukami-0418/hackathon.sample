@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <title>test flash</title>
+</head>
+<body>
+
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul>
+            {% for message in messages %}
+                <li>{{ message }}</li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+
+    <form action="/" method=post>
+        <dl>
+          <dt>ユーザー名:
+            <dd><input type=text name=user>
+          <dt>パスワード:
+            <dd><input type=text name=password>
+        </dl>
+        <p><input type=submit value=ログイン>
+    </form>
+    
+</body>
+</html>
